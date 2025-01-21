@@ -1,0 +1,19 @@
+1. Create Maven project
+2. In pom.xml, add dependencies
+3. Create Folder "Response_Files" under the project
+4. Create below folder structure
+src/main/java -> create one package i.e utilities
+src/test/java -> create two packages that are resources and testcases
+5. Inside utilities package create 5 java classes -> BaseClass, AuthUtils, ConfigReader, ExcelReader and Helper
+6. Inside resources package create two files -> config.properties and Test_Data.xlsx
+7. Write code in ConfigReader and ExcelReader java class
+8. Write code in BaseClass
+9. Create 5 java classes in testcases package (Create_API, GET_API, Update_API, Delete_API, Main_Testcases_Flow)
+and write the code. Here I have used pathParameter as well
+10. To not hard code the request body and to pass the value for each field at runtime, we use Lombok library
+11. Add Lombok dependency in pom.xml
+12. Inside src/test/java create one package "api_request_classes" which will have the java classes for each if the request APIs
+13. Create one java class CreateAPI_Request inside package "api_request_classes"
+14. This class will have all the fields from input json. Using Lombok annotations will automatically generate code
+like getters, setters, constructors etc.
+15. Create a java class "CreateAPI_POJO" and call method of this class in Main_Testcase_Flow java class
