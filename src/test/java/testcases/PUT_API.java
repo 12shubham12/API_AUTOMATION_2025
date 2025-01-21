@@ -21,10 +21,7 @@ public class PUT_API {
                 """;
 
         Response response = RestAssured.given().
-                // auth().
-                // oauth2(OAuthUtils.getoAuthToken()).
-                //or header("authorization", "OAuth " + OAuthUtils.getBearerToken()).
-                header("Authorization", "").
+                //header("Authorization", "Bearer " + AuthUtils.getBearerToken()).
                 contentType(ContentType.JSON).
                 body(requestBody).
                 baseUri(endPointURL).

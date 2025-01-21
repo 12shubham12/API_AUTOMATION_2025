@@ -14,8 +14,7 @@ public class Delete_API {
         Response response = RestAssured.given().
                 // auth().
                 // oauth2(OAuthUtils.getoAuthToken()).
-                //or header("authorization", "OAuth " + OAuthUtils.getBearerToken()).
-                header("Authorization", "").
+                //or header("authorization", "Bearer " + OAuthUtils.getBearerToken()).
                 contentType(ContentType.JSON).
                 baseUri(endPointURL).
                 pathParam("id",Create_API.id).

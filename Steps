@@ -2,8 +2,8 @@
 2. In pom.xml, add dependencies
 3. Create Folder "Response_Files" under the project
 4. Create below folder structure
-src/main/java -> create one package i.e utilities
-src/test/java -> create two packages that are resources and testcases
+src/main/java -> create one package i.e api_request_classes
+src/test/java -> create two packages that are resources, utilities and testcases
 5. Inside utilities package create 5 java classes -> BaseClass, AuthUtils, ConfigReader, ExcelReader and Helper
 6. Inside resources package create two files -> config.properties and Test_Data.xlsx
 7. Write code in ConfigReader and ExcelReader java class

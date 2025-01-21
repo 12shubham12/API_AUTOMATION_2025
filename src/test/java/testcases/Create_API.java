@@ -3,11 +3,9 @@ package testcases;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.testng.annotations.Test;
 import utilities.Helper;
 
 import java.io.*;
-import java.nio.file.Files;
 
 public class Create_API {
 
@@ -25,8 +23,7 @@ public class Create_API {
         Response response = RestAssured.given().
                 // auth().
                 // oauth2(OAuthUtils.getoAuthToken()).
-                //or header("authorization", "OAuth " + OAuthUtils.getBearerToken()).
-                header("Authorization", "").
+                //or header("authorization", "Bearer " + OAuthUtils.getBearerToken()).
                 contentType(ContentType.JSON).
                 baseUri(endPointURL).
                 body(requestBody).

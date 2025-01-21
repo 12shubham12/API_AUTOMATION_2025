@@ -13,7 +13,6 @@ public class Get_API {
                 // auth().
                 // oauth2(OAuthUtils.getoAuthToken()).
                 //or header("authorization", "OAuth " + OAuthUtils.getBearerToken()).
-                header("Authorization", "").
                 contentType(ContentType.JSON).
                 baseUri(endPointURL).
                 pathParam("id",Create_API.id).
